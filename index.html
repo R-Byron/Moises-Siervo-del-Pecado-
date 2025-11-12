@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOISÉS: SIERVO DEL PECADO – Edición Promocional Mejorada | R. Byron</title>
+
+<meta name="author" content="R. Byron">
+<meta name="description" content="Edición promocional mejorada de Moisés: Siervo del Pecado – Una lectura forense del Éxodo revelando la inversión divina oculta a plena vista.">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --crimson: #8B0000; 
+        --deep: #a30c0c;
+        --gray: #666;
+        --bg: #fff;
+        --text: #000000;
+        --border: #ddd;
+    }
+    
+    body.dark {
+        --bg: #0a0a0a;
+        --text: #f4f4f4;
+        --crimson: #c11b1b;
+        --deep: #d32a2a;
+        --gray: #aaa;
+        --border: #333;
+    }
+    
+    body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "EB Garamond", "Georgia", serif;
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    
+    .toggle-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        background: var(--crimson);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.3em;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        font-weight: bold;
+    }
+    
+    .toggle-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(139,0,0,0.5);
+    }
+    
+    .toggle-btn:focus {
+        outline: 2px solid var(--deep);
+        outline-offset: 2px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin: 3rem 0 2rem;
+    }
+    
+    .logo img {
+        width: 80px;
+        height: auto;
+        display: inline-block;
+    }
+    
+    .cover-image {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 3rem auto;
+        box-shadow: 0 10px 40px rgba(139,0,0,0.4);
+        border-radius: 8px;
+    }
+    
+    h1 {
+        font-family: 'Cinzel', serif;
+        font-size: 3.2em;
+        letter-spacing: 4px;
+        font-weight: 700;
+        margin: 1rem 0 0.5rem;
+        color: var(--crimson);
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-family: 'Cinzel', serif;
+        font-size: 1.8em;
+        color: var(--crimson);
+        font-weight: 700;
+        text-align: center;
+        margin: 3rem 0 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    h3 {
+        font-family: 'Cinzel', serif;
+        font-size: 1.4em;
+        color: var(--crimson);
+        font-weight: 700;
+        text-align: center;
+        margin: 2rem 0 1rem;
+        letter-spacing: 1px;
+    }
+    
+    p {
+        font-size: 1.1em;
+        color: var(--text);
+        margin: 1em 0;
+        text-align: left;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .center p {
+        text-align: center;
+    }
+    
+    strong {
+        font-weight: 600;
+        color: var(--text);
+    }
+    
+    em {
+        font-style: italic;
+    }
+    
+    .subtitle {
+        font-size: 1.3em;
+        color: var(--text);
+        text-align: center;
+        margin: 0.5rem 0;
+        font-weight: normal;
+    }
+    
+    .cta {
+        text-align: center;
+        margin: 3rem 0;
+    }
+    
+    .cta a {
+        display: inline-block;
+        padding: 1.2em 2.5em;
+        background: var(--crimson);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(139,0,0,0.3);
+    }
+    
+    .cta a:hover {
+        background: var(--deep);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(139,0,0,0.5);
+    }
+    
+    .highlight-box {
+        border-left: 5px solid var(--crimson);
+        padding: 2em;
+        margin: 2.5em 0;
+        background: rgba(139, 0, 0, 0.05);
+        transition: background 0.3s ease;
+        border-radius: 4px;
+    }
+    
+    body.dark .highlight-box {
+        background: rgba(193, 27, 27, 0.15);
+    }
+    
+    .highlight-box p {
+        text-align: left;
+        font-size: 1.05em;
+    }
+    
+    .highlight-box ul {
+        margin: 1.5em 0;
+        padding-left: 2em;
+    }
+    
+    .highlight-box li {
+        margin: 1em 0;
+        text-align: left;
+        font-size: 1.05em;
+        line-height: 1.7;
+    }
+    
+    .chapter-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 2.5em auto;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        border: 2px solid var(--border);
+        border-radius: 4px;
+        transition: border 0.3s ease;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2.5em 0;
+        font-size: 1em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    th, td {
+        padding: 1em;
+        border: 1px solid var(--border);
+        text-align: left;
+        transition: border 0.3s ease, background 0.3s ease;
+    }
+    
+    th {
+        background: var(--crimson);
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Cinzel', serif;
+        letter-spacing: 1px;
+    }
+    
+    tbody tr:nth-child(even) {
+        background: rgba(139, 0, 0, 0.03);
+    }
+    
+    body.dark tbody tr:nth-child(even) {
+        background: rgba(193, 27, 27, 0.08);
+    }
+    
+    hr {
+        border: none;
+        border-top: 3px solid var(--crimson);
+        margin: 4em 0;
+        opacity: 0.7;
+    }
+    
+    section {
+        margin: 3em 0;
+    }
+    
+    footer {
+        margin-top: 5em;
+        padding-top: 2em;
+        border-top: 2px solid var(--border);
+        text-align: center;
+        font-size: 0.95em;
+        color: var(--gray);
+    }
+    
+    footer p {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    
+    footer a {
+        color: var(--crimson);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    footer a:hover {
+        color: var(--deep);
+        text-decoration: underline;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px;
+            padding: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+        }
+        
+        .toggle-btn {
+            top: 10px;
+            right: 10px;
+            padding: 10px 14px;
+            font-size: 1.1em;
+        }
+        
+        .logo img {
+            width: 60px;
+        }
+        
+        .cover-image {
+            max-width: 100%;
+            margin: 2rem auto;
+        }
+        
+        .cta a {
+            padding: 1em 2em;
+            font-size: 1em;
+        }
+        
+        table {
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            padding: 0.7em;
+        }
+    }
+</style>
+</head>
+
+<body class="dark">
+<button class="toggle-btn" onclick="document.body.classList.toggle('dark')" aria-label="Alternar modo oscuro/claro">🌙 / ☀️</button>
+
+<div class="center">
+    <img src="https://i.postimg.cc/hhWjCMsV/ORB.png" alt="Portada de Moisés: Siervo del Pecado" class="cover-image" loading="eager">
+</div>
+
+<div class="logo">
+    <img src="https://i.postimg.cc/FkRSB8KF/Logo-removebg-preview.png" alt="Logo de la Serie Sin Mediación" loading="eager">
+</div>
+
+<h1>MOISÉS<br>SIERVO DEL PECADO</h1>
+
+<p class="subtitle"><strong>Contradicción, Inversión y Pecado en el Libro del Éxodo</strong></p>
+<p class="subtitle">Una Revelación Textual e Histórica</p>
+
+<div class="center">
+    <p><strong>R. BYRON</strong></p>
+    <p>Parte de la serie <em>SIN MEDIACIÓN</em></p>
+    <p><small>Edición Promocional Mejorada – Noviembre 2025</small></p>
+</div>
+
+<p class="center" style="font-size:1.15em; color:var(--crimson); margin:2.5em 0; font-weight:600;">
+Más de diez millones de libros basados en el Éxodo se venden anualmente—sin embargo, ninguno confronta lo que esta investigación revela.
+</p>
+
+<div class="cta">
+    <a href="mailto:r.byron.3x3@gmail.com?subject=Solicitud de Manuscrito de Moisés">📖 Solicitar Manuscrito Completo</a>
+</div>
+
+<section id="back-cover">
+    <h2>Cuando la Palabra Habla</h2>
+    
+    <p style="font-size:1.2em; font-style:italic; text-align:center; margin:2em 0; color:var(--text);">¿Qué sucede cuando leemos el Éxodo sin suposiciones teológicas, influencias o interpretaciones?</p>
+    
+    <div class="highlight-box">
+        <p><strong>Te mintieron.</strong></p>
+        
+        <p>Sobre Moisés. Sobre lo que era. Sobre lo que hizo.</p>
+        
+        <p>Te dijeron que era un héroe. Un libertador. El siervo elegido de Dios.</p>
+        
+        <p><strong>Era un asesino. Un fugitivo. Un heraldo de destrucción masiva.</strong></p>
+        
+        <p><strong>El Crimen:</strong> Moisés mató a un capataz egipcio a sangre fría. Premeditado. Calculado. Miró a ambos lados primero. Luego escondió el cuerpo en la arena. Sin juicio. Sin responsabilidad. Sin consecuencias de parte de Dios.</p>
+        
+        <p><strong>La Inversión:</strong> Cuando Caín mató a Abel, Dios lo marcó como maldito y lo exilió. Cuando Moisés mató, Dios le dio un ascenso—lo hizo la voz de la autoridad divina. Mismo crimen. Tratamiento opuesto. ¿Por qué?</p>
+        
+        <p><strong>La Matanza:</strong> Moisés no solo liberó esclavos. Orquestó el exterminio sistemático de todos los primogénitos egipcios. Bebés. Niños. Miles de muertos en una sola noche. Esto no fue daño colateral. Este era el plan.</p>
+        
+        <p>Y cuando finalmente veas lo que les hizo a su propio pueblo—a hermanos, por miles—entenderás por qué esta historia tuvo que ser enterrada en capas de lenguaje sagrado.</p>
+        
+        <p><strong>Esto no es comentario. Esto es investigación forense.</strong></p>
+        
+        <p>Cada milagro fue una masacre. Cada encuentro divino, una historia de encubrimiento. La narrativa que heredaste fue manufacturada—diseñada para hacerte cómplice en celebrar atrocidades que condenarías en cualquier otro contexto.</p>
+        
+        <p>La evidencia siempre estuvo allí. Simplemente no se te permitió verla.</p>
+        
+        <p><strong>Hasta ahora.</strong></p>
+    </div>
+</section>
+
+<hr>
+
+<div style="text-align:center; margin:5em auto; max-width:650px; padding:3em 2em;">
+    <p style="font-family:'Cinzel', serif; font-size:0.95em; letter-spacing:2px; color:var(--crimson); margin-bottom:2em; text-transform:uppercase; font-weight:600;">
+        Escritura
+    </p>
+    <p style="font-size:1.35em; font-style:italic; color:var(--text); line-height:2; margin:0; font-weight:400;">
+        "Sus mentes estaban veladas; y hasta el día de hoy,<br>
+        la misma cubierta permanece cuando se lee el Antiguo Testamento..."
+    </p>
+    <p style="font-size:1.05em; color:var(--gray); margin-top:2.5em; letter-spacing:1px;">
+        – 2 Corintios 3:14
+    </p>
+    <div style="width:80px; height:2px; background:var(--crimson); margin:2em auto 0;"></div>
+</div>
+
+<hr>
+
+<section id="chapters">
+    <section id="part-i">
+        <h2>Capítulo I: El Asesino</h2>
+        
+        <h3>El Crimen</h3>
+        <p>Moisés vio a un egipcio golpeando a un hebreo. No intervino. No pidió ayuda. No apeló a la autoridad.</p>
+        
+        <p>Miró a ambos lados.</p>
+        
+        <p>Eso es premeditación. Eso es cálculo. Ese es el momento en que la intención se cristaliza en asesinato.</p>
+        
+        <p>Derribó al egipcio. Lo mató. Luego escondió el cuerpo en la arena.</p>
+        
+        <p>Esto no fue pasión. Esto no fue defensa. Esto fue ejecución fría seguida de ocultamiento de evidencia.</p>
+        
+        <p>Moisés asesinó a un hombre. Luego huyó.</p>
+        
+        <img src="https://i.postimg.cc/N0qHXHNh/Moses-Masac.jpg" alt="Ilustración mostrando a Moisés golpeando a un egipcio" class="chapter-image">
+        
+        <h3>El Patrón: Caín</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Caín</th>
+                    <th>Moisés</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Crimen</strong></td>
+                    <td>Mató a Abel</td>
+                    <td>Mató a un egipcio</td>
+                </tr>
+                <tr>
+                    <td><strong>Método</strong></td>
+                    <td>Golpeó y enterró</td>
+                    <td>Golpeó y ocultó en la arena</td>
+                </tr>
+                <tr>
+                    <td><strong>Razón</strong></td>
+                    <td>Celos</td>
+                    <td>Defensa de un hebreo</td>
+                </tr>
+                <tr>
+                    <td><strong>Descubrimiento</strong></td>
+                    <td>Dios lo confrontó</td>
+                    <td>Faraón informado por testigos</td>
+                </tr>
+                <tr>
+                    <td><strong>Respuesta</strong></td>
+                    <td>Desvía la responsabilidad</td>
+                    <td>Huye para evadir la justicia</td>
+                </tr>
+                <tr>
+                    <td><strong>Reacción Divina</strong></td>
+                    <td>Maldito, marcado, exiliado</td>
+                    <td>Protegido, elegido, empoderado</td>
+                </tr>
+                <tr>
+                    <td><strong>Responsabilidad</strong></td>
+                    <td>Castigo directo</td>
+                    <td>Ninguna: crimen sin resolver</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Mismo acto. Resultados opuestos.</strong></p>
+        
+        <p>Caín recibe maldición. Moisés recibe comisión.</p>
+        
+        <p>Dios castigó al primer asesino. Dios ascendió al segundo.</p>
+    </section>
+    
+    <section id="part-ii">
+        <h2>Capítulo II: La Selección</h2>
+        
+        <h3>La Comisión</h3>
+        <p>Pasan cuarenta años. Moisés se esconde en Madián, viviendo bajo una identidad falsa como pastor.</p>
+        
+        <p>Dios se le aparece en fuego.</p>
+        
+        <p>Sin mención del asesinato. Sin expiación requerida. Sin responsabilidad exigida. ¿El estatus de fugitivo? Completamente ignorado.</p>
+        
+        <p><strong>Dios eligió a un asesino para ser Su ejecutor.</strong></p>
+        
+        <h3>La Pregunta de la Elección Divina</h3>
+        <p>Moisés ejecuta las plagas. Mata a todos los primogénitos egipcios. Ahoga a todo el ejército del Faraón en el mar.</p>
+        
+        <p>Miles de muertos. Todos por orden divina. Todos a través de Moisés—el hombre que ya tenía sangre en sus manos.</p>
+        
+        <p>¿Por qué elegir a un asesino para esta misión? ¿Por qué no alguien limpio?</p>
+        
+        <p><strong>A menos que la misión requiriera a alguien ya cómodo con matar.</strong></p>
+    </section>
+    
+    <section id="part-iii">
+        <h2>Capítulo III: Las "Víctimas"</h2>
+        
+        <p>Niños egipcios murieron en sus camas. Inocentes. Culpables solo de geografía y orden de nacimiento.</p>
+        
+        <p>Los soldados del Faraón siguieron órdenes. Se ahogaron, gritando, mientras el mar colapsaba sobre ellos.</p>
+        
+        <p>Estas muertes se presentan como necesarias. Justificadas. Celebradas en canción.</p>
+        
+        <img src="https://i.postimg.cc/cH8yCW7w/VICTIMS.png" alt="Ilustración mostrando las víctimas" class="chapter-image">
+        
+        <p><strong>Has cantado esas canciones. Has celebrado esas muertes.</strong></p>
+        
+        <p>¿Las celebrarías si sucedieran hoy? ¿Si los niños de otra nación murieran en sus camas? ¿Si otro ejército se ahogara?</p>
+        
+        <p>¿O la etiqueta de "justicia divina" hace aceptable la matanza masiva?</p>
+    </section>
+</section>
+
+<hr>
+
+<section id="coming-chapters">
+    <h2>Capítulos Próximos</h2>
+    
+    <p>Esta investigación se extiende más allá de lo que piensas.</p>
+    
+    <p>Los secretos que la tradición ocultó van más profundo que un asesinato, una plaga, un ahogamiento.</p>
+    
+    <p>Tendrás que decidir: ¿Justicia o venganza? ¿Liberación o genocidio?</p>
+    
+    <p><strong>Todo lo que pensabas que era fundamental será cuestionado.</strong></p>
+    
+    <p><strong>Todo.</strong></p>
+</section>
+
+<footer>
+    <p>© 2025 R. Byron. Todos los derechos reservados. | Serie SIN MEDIACIÓN</p>
+    <p>Contacto: <a href="mailto:r.byron.3x3@gmail.com">r.byron.3x3@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
